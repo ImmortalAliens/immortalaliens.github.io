@@ -14,18 +14,21 @@ body {
 }
 
 .footer {
-    margin-top: 100px;
     z-index: 401;
     position: relative;
+}
+
+.card {
+    z-index: 400;
 }
 
 .main:after {
     content: "";
     position: absolute;
-    bottom: -100px;
-    left: -50px;
-    height: 200px;
-    width: 130%;
+    bottom: -150px;
+    left: -600px;
+    height: 300px;
+    width: 140%;
     background-color: #f2f4f9;
     -webkit-transform: rotate(-4deg);
     -ms-transform: rotate(-4deg);
