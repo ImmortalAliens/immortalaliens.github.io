@@ -1,0 +1,34 @@
+
+.main {
+    /* background: linear-gradient(45deg,#665fee 0%,#27c2de 100%); */
+    /* background-image: url("https://www.nasa.gov/sites/default/files/p1414aw_0.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    min-height: 1000px;
+    z-index: 400;
+}
+body {
+    background-color: #f2f4f9;
+}
+
+.footer {
+    margin-top: 100px;
+    z-index: 401;
+    position: relative;
+}
+
+.main:after {
+    content: "";
+    position: absolute;
+    bottom: -100px;
+    left: -50px;
+    height: 200px;
+    width: 130%;
+    background-color: #f2f4f9;
+    -webkit-transform: rotate(-4deg);
+    -ms-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+    z-index: 10;
+}
