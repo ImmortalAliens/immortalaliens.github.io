@@ -22,16 +22,7 @@ body {
     z-index: 400;
 }
 
-.main:after {
-    content: "";
-    position: absolute;
-    bottom: -150px;
-    left: -600px;
-    height: 300px;
-    width: 140%;
-    background-color: #f2f4f9;
-    -webkit-transform: rotate(-4deg);
-    -ms-transform: rotate(-4deg);
-    transform: rotate(-4deg);
-    z-index: 10;
+.hv-avatar:hover {
+    transform: scale(1.02);
+    transition: all .5s ease-in-out;
 }
