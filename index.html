@@ -41,6 +41,10 @@
 				</div>
 			</div>
 			<div class="row d-flex m-2 p-2 justify-content-around">				
+				<div id="jurassic" class="card shadow m-2 p-1" style="width: 18rem;">
+					<img src="hammond.gif" class="rounded" />				
+				</div>
+
 				<div class="card shadow m-2" style="width: 18rem;">
 					<div class="card-body d-flex flex-column">
 						<h5 class="card-title">Social</h5>
@@ -128,6 +132,24 @@
 	<script src="//code.jquery.com/jquery.js"></script>
 	<!-- Bootstrap JavaScript -->
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script>
+	 $(document).ready(function(){
+		 $('#jurassic').click(function(){
+			 console.log('hovering');
+			 const playPromise = new Audio('jurassic-sound.mp3').play()
+			 if (playPromise !== undefined) {
+				playPromise.then(function() {
+					// Automatic playback started!
+				}).catch(function(error) {
+					console.log(error)
+					// Automatic playback failed.
+					// Show a UI element to let the user manually start playback.
+				});
+			 }
+		 });
+
+	 })
+	</script>
 	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 </body>
 
