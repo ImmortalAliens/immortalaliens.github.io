@@ -10,10 +10,13 @@
     z-index: 400;
 }
 body {
-    background-color: #ebebeb;
-    
-    
+    background-color: #fae4e4;
 }
+
+.pepebutton {
+    min-width: 6rem;
+}
+
 
 .footer {
     z-index: 401;
@@ -28,3 +31,4 @@ body {
     transform: scale(1.02);
     transition: all .5s ease-in-out;
 }
+
